@@ -1,0 +1,8 @@
+1) make all
+2) example
+iwlist wlan0 scan			//scan ap
+iwconfig wlan0 key xxxxxx	//enter password
+iwconfig wlan0 key open		//open password authentification
+iwconfig wlan0 essid "TEST"	//connect "TEST" ap
+udhcpc –i wlan0  -b			//obtain dynamic ip
+
