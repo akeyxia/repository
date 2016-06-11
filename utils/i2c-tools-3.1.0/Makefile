@@ -22,7 +22,7 @@ INSTALL_PROGRAM	:= $(INSTALL) -m 755
 RM		:= rm -f
 
 #CC	?= gcc
-CC = arm-linux-gnueabihf-gcc
+CC = arm-linux-gnueabihf-gcc -static
 
 CFLAGS	?= -O2
 # When debugging, use the following instead
