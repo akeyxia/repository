@@ -8,16 +8,18 @@ ifndef PREFIX
   PREFIX = /usr/local
 endif
 
+CROSS_COMPILE_PREFIX = arm-linux-gnueabihf-
+
 ## Compiler to use (modify this for cross compile).
-CC = gcc
+CC = $(CROSS_COMPILE_PREFIX)gcc -static
 ## Other tools you need to modify for cross compile (static lib only).
-AR = ar
-RANLIB = ranlib
+AR = $(CROSS_COMPILE_PREFIX)ar
+RANLIB = $(CROSS_COMPILE_PREFIX)ranlib
 
 ## Uncomment this to build tools using static version of the library.
 ## Mostly useful for embedded platforms without ldd, or to create
 ## a local version (non-root).
-# BUILD_STATIC = y
+BUILD_STATIC = y
 
 ## Uncomment this to build without using libm (less efficient).
 ## This is mostly useful for embedded platforms without maths.
