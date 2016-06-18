@@ -1,0 +1,9 @@
+/------ iperf ------/
+build step:
+1)
+./configure --host=arm CC=arm-linux-gnueabihf-gcc CFLAGS=--static --prefix=`pwd`/__PREFIX --exec-prefix=`pwd`/__EPREFIX
+2)
+make
+3)
+make install
+
