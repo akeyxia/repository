@@ -1,0 +1,12 @@
+[submodule "utils/ti/omapconf"]
+	path = utils/ti/omapconf
+	url = git://github.com/omapconf/omapconf.git
+	branch = master
+[submodule "utils/grabserial"]
+	path = utils/grabserial
+	url = git@github.com:tbird20d/grabserial.git
+	branch = master
+[submodule "utils/dtc"]
+	path = utils/dtc
+	url = git://git.kernel.org/pub/scm/utils/dtc/dtc.git
+	branch = master
